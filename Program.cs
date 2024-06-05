@@ -1,8 +1,8 @@
 ﻿
 internal class Program
 {
-    private static void Main(string[] args)
-    {
-       DigitFifthPower.c();
-    }
+     private static void Main(string[] args)
+     {
+        
+     }
 }
