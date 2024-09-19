@@ -6,25 +6,46 @@ using System.Threading.Tasks;
 
 namespace Exercises.Project_Euler
 {
-    internal class Triangular__Pentagonal__and_Hexagonal
+    public class Triangular__Pentagonal__and_Hexagonal
     {
-        public void TriangularPentagonalandHexagonal(int n)
+        int[] array1 = new int[1000];
+        int[] array2 = new int[1000];
+        int[] array3 = new int[1000];
+        public  void TriangularPentagonalandHexagonal(int n)
         {
-            int x = Triangular(n);
-            int y = Pentagonal(165);
-            int z = Hexagonal(143);
+            //int x = Triangular(n);
+            //int y = Pentagonal(165);
+            //int z = Hexagonal(143);
         }
-        public int Triangular(int n)
-        {
-            return n * (n + 1) / 2;
+        public void Triangular()
+        {             
+                for (int j = 285; j < 1000; j++)
+                {
+                   array1[j] =  j * (j + 1) / 2;            
+                }              
         }
-        public int Pentagonal(int n)
+        public void Pentagonal()
         {
-            return n * (3*n - 1) / 2;
+            for (int j = 165; j < 1000; j++)
+            {
+                array2[j] = j * (3*j - 1) / 2;
+            }
+            foreach(int n in array2)
+            {
+                Console.WriteLine(n);
+            }
         }
-        public int Hexagonal(int n)
+        public void Hexagonal()
         {
-            return n * (2 * n - 1);
+            for (int j = 143; j < 1000; j++)
+            {
+                array2[j] = j * (2 * j - 1);
+            }
+            foreach (int n in array2)
+            {
+                Console.WriteLine(n);
+            }
+            
         }
     }
 }
