@@ -19,10 +19,10 @@ namespace Exercises.Project_Euler
         }
         public void Triangular()
         {             
-                for (int j = 285; j < 1000; j++)
-                {
-                   array1[j] =  j * (j + 1) / 2;            
-                }              
+            for (int j = 285; j < 1000; j++)
+            {
+                array1[j] =  j * (j + 1) / 2;            
+            }              
         }
         public void Pentagonal()
         {
